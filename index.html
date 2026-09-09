@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tommy's Original — Barbershop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&family=Fredoka+One&family=Kaushan+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       INTRO ANIMATION
+  ═══════════════════════════════════════ -->
+  <div id="intro-overlay">
+    <div class="intro-panel intro-panel--top"></div>
+    <div class="intro-panel intro-panel--bottom"></div>
+    <div class="intro-panel intro-panel--left"></div>
+    <div class="intro-panel intro-panel--right"></div>
+    <div class="intro-center">
+      <div class="intro-logo-wrap">
+        <img src="images/logo.png" alt="Tommy's Original" class="intro-logo" />
+      </div>
+      <div class="intro-tagline">HADDONFIELD, NJ</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════ -->
+  <header>
+    <div class="logo-cell">
+      <img src="images/logo.png" alt="Tommy's Original Barbershop" class="logo-img" />
+    </div>
+
+    <div class="nav-cell">
+      <nav>
+        <a href="#about">About Us</a>
+        <a href="#team">Meet the Team</a>
+        <a href="#the-shop">The Shop</a>
+        <a href="#charity">Charity</a>
+        <a href="#faq">F.A.Q's</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="https://booksy.com/en-us/632422_tommys-original_barber-shop_28453_haddonfield?do=invite&_branch_match_id=1549996852613772323&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVDw5PifJy93FN80%2ByrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA2c9T%2BzwAAAA%3D#ba_s=seo" target="_blank" class="book-btn">Quick Book Now</a>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-media">
+      <div class="hero-media-inner">
+        <video
+          class="hero-video"
+          src="videos/1123.mov"
+          autoplay
+          loop
+          muted
+          playsinline
+        ></video>
+      </div>
+      <div class="hero-badge">
+        Your City — Walk-ins Welcome
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       SPOTIFY PLAYER
+  ═══════════════════════════════════════ -->
+  <div class="spotify-widget" id="spotifyWidget">
+    <div class="spotify-bar" id="spotifyBar">
+      <span class="spotify-label">The Shop Playlist</span>
+      <span class="spotify-chevron" id="spotifyChevron">▲</span>
+    </div>
+    <div class="spotify-panel" id="spotifyPanel">
+      <iframe
+        id="spotifyIframe"
+        src="https://open.spotify.com/embed/playlist/34f9hAUYK13R8Qv9GhihOC?utm_source=generator&theme=0"
+        width="100%"
+        height="380"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <section class="about" id="about" style="padding:0;">
+    <div class="about-text">
+      <div class="section-kicker">Our Story</div>
+      <h2 class="about-title">
+        A second<br><em>home.</em>
+      </h2>
+      <div class="about-body">
+        <p>Tommy's Original is the only barbershop in South Jersey that brings back that old-school communal feel — the kind where you're not just getting a cut, you're hanging out. You come in, your boys are already there, the conversation is flowing, and nobody's in a rush to leave. That energy that used to define every neighborhood barbershop? It lives here.</p>
+        <p>Walk through the door and you'll know exactly who Tommy is. The walls tell the story — Eagles, Sixers, Phillies, Flyers, Philly boxing legends — his Italian-American roots woven right alongside it all. It's personal. It's proud. And it makes the shop feel like somewhere you actually belong.</p>
+        <p>Modern cuts. Classic atmosphere. The kind of place your grandfather would've loved and you can't stop coming back to.</p>
+      </div>
+      <div class="about-rule"></div>
+    </div>
+
+    <div class="about-visual">
+      <div class="about-ornament">
+        <img src="images/shop-interior.png" alt="Inside Tommy's Original" class="about-photo" />
+        <div class="est-badge">
+          <span>Est.</span>
+          <span>2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       MEET THE TEAM
+  ═══════════════════════════════════════ -->
+  <section class="team" id="team">
+    <div class="team-header">
+      <div>
+        <div class="section-kicker" style="color:var(--gold);">The Crew</div>
+        <h2 class="team-title">Meet <em>the team.</em></h2>
+      </div>
+      <p class="team-intro">Each barber brings their own signature style. Click any card to see their work and book directly.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <!-- Barber 1 -->
+      <div class="barber-card" onclick="window.location='#barber-tommy'">
+        <div class="barber-photo">
+          <img src="images/tommy.jpg" alt="Tommy" class="barber-img" style="object-position: 50% 0%;" />
+        </div>
+        <div class="barber-card-body">
+          <div class="barber-role">Head Barber</div>
+          <div class="barber-name">Tommy</div>
+          <div class="barber-specialty">Fades · Scissor cuts · Classic styles</div>
+          <a href="https://booksy.com/en-us/632422_tommys-original_barber-shop_28453_haddonfield/staffer/547995#ba_s=seo" class="barber-link" target="_blank">View & Book</a>
+        </div>
+      </div>
+
+      <!-- Barber 2 -->
+      <div class="barber-card" onclick="window.location='#barber-2'">
+        <div class="barber-photo">
+          <img src="images/joe.jpg" alt="Joe" class="barber-img" />
+        </div>
+        <div class="barber-card-body">
+          <div class="barber-role">Senior Barber</div>
+          <div class="barber-name">Joe</div>
+          <div class="barber-specialty">Skin fades · Beard shaping · Lineups</div>
+          <a href="https://booksy.com/en-us/632422_tommys-original_barber-shop_28453_haddonfield/staffer/558005#ba_s=seo" class="barber-link" target="_blank">View & Book</a>
+        </div>
+      </div>
+
+      <!-- Barber 3 -->
+      <div class="barber-card" onclick="window.location='#barber-3'">
+        <div class="barber-photo">
+          <img src="images/brian.jpg" alt="Brian" class="barber-img" />
+        </div>
+        <div class="barber-card-body">
+          <div class="barber-role">Barber</div>
+          <div class="barber-name">Brian</div>
+          <div class="barber-specialty">Textured cuts · Afros · Loc maintenance</div>
+          <a href="https://booksy.com/en-us/632422_tommys-original_barber-shop_28453_haddonfield/staffer/554416#ba_s=seo" class="barber-link" target="_blank">View & Book</a>
+        </div>
+      </div>
+
+      <!-- Barber 4 -->
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       THE SHOP — PHOTO GRID
+  ═══════════════════════════════════════ -->
+  <section class="photo-section" id="the-shop">
+
+    <div class="photo-section-header">
+      <div class="section-kicker">The Space</div>
+      <h2 class="photo-section-title">Step <em>inside.</em></h2>
+    </div>
+
+    <div class="photo-grid">
+
+      <div class="photo-card photo-card--large">
+        <img src="images/bike.jpg" alt="Inside Tommy's Original — full shop" class="photo-img" />
+        <div class="photo-caption">
+          <span class="photo-caption-tag">Interior</span>
+          The full shop — where the energy never stops
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-inner">
+            <div class="photo-placeholder-label">Interior — The Chairs</div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <span class="photo-caption-tag">Interior</span>
+          Three classic stations, each with its own character
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-inner">
+            <div class="photo-placeholder-label">Interior — Waiting Area</div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <span class="photo-caption-tag">Interior</span>
+          The waiting area — where the real conversations happen
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-inner">
+            <div class="photo-placeholder-label">Interior — Shop Details</div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <span class="photo-caption-tag">Interior</span>
+          The details that make the space feel like home
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-inner">
+            <div class="photo-placeholder-label">Exterior — Storefront Window</div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <span class="photo-caption-tag">Exterior</span>
+          The storefront — a familiar sight on the block
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-inner">
+            <div class="photo-placeholder-label">Interior — Tools of the Trade</div>
+          </div>
+        </div>
+        <div class="photo-caption">
+          <span class="photo-caption-tag">Interior</span>
+          Precision tools, kept sharp and ready
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       COMMUNITY — HADDONFIELD, NJ
+  ═══════════════════════════════════════ -->
+  <section class="community-section">
+
+    <div class="community-text">
+      <div class="section-kicker" style="color:var(--gold);">Our Neighborhood</div>
+      <h2 class="community-title">Rooted in<br><em>Haddonfield.</em></h2>
+      <div class="community-body">
+        <p>Tommy's Original didn't land here by accident. Haddonfield, NJ has been a tight-knit community for centuries — a place where local businesses aren't just tolerated, they're the backbone of the town. We're proud to be part of that fabric.</p>
+        <p>From the tree-lined streets of Kings Highway to the familiar faces on Kings Court, this borough has a character all its own. Historic, walkable, full of life — and full of people who appreciate something done right.</p>
+        <p>We're not just a shop in Haddonfield. We're a Haddonfield shop. There's a difference.</p>
+      </div>
+
+      <div class="community-stats">
+        <div class="stat-item">
+          <div class="stat-num">1747</div>
+          <div class="stat-label">Year Haddonfield was founded</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">~12k</div>
+          <div class="stat-label">Residents strong</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">#1</div>
+          <div class="stat-label">Best downtown in South Jersey</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="community-visual">
+      <div class="community-map-placeholder">
+        <div class="community-map-inner" id="community-photo-wrap">
+          <img src="images/indian-tavern-statue.jpg" alt="Historic Downtown Haddonfield" class="community-photo" id="community-photo-img" />
+        </div>
+        <div class="community-tag-list">
+          <span class="community-tag active" data-photo="images/indian-tavern-statue.jpg">Historic Downtown</span>
+          <span class="community-tag" data-photo="images/kings highwayhaddonfield-3.webp">Kings Highway</span>
+          <span class="community-tag" data-photo="images/haddonfield-shops.jpg">Family-Owned Shops</span>
+          <span class="community-tag" data-photo="images/hadro2.jpg" data-photo-position="0% center">Hadrosaurus Discovery Site</span>
+          <span class="community-tag" data-photo="images/philly-skyline.jpg">South Jersey</span>
+          <span class="community-tag" data-photo="images/historic-haddonfield.jpg">Est. 1747</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CHARITY
+  ═══════════════════════════════════════ -->
+  <div id="charity">
+
+    <div class="charity-simple">
+      <div class="charity-simple-text">
+        <div class="section-kicker">Giving Back</div>
+        <h2 class="charity-simple-title">More than<br>a <em>haircut.</em></h2>
+        <p class="charity-simple-body">At Tommy's Original, the chair has always been about more than a fresh cut. We believe in giving back to the community that supports us — showing up, giving our time, and using what we do best to make a difference. These are a few of the moments that remind us why we do this.</p>
+        <a href="mailto:tommysoriginal3@gmail.com" class="charity-simple-btn">Know a cause? Reach out</a>
+      </div>
+      <div class="charity-simple-photos">
+        <div class="charity-photo-card">
+          <img src="images/Charity 1.jpg" alt="Tommy's Original giving back to the community" class="charity-photo-img" />
+        </div>
+        <div class="charity-photo-card">
+          <img src="images/charity 2.jpg" alt="Tommy's Original charity cuts" class="charity-photo-img" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ══════════════════════════════════════
+       F.A.Q'S
+  ═══════════════════════════════════════ -->
+  <section class="faq-section" id="faq">
+
+    <div class="faq-header">
+      <div class="section-kicker">Got Questions?</div>
+      <h2 class="faq-title">F.A.Q's</h2>
+      <p class="faq-intro">Everything you need to know before your first visit — or your hundredth.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Do you accept walk-ins?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes — walk-ins are always welcome at Tommy's Original. That said, if you want to guarantee your spot at a specific time, booking an appointment is the way to go. We recommend calling ahead during peak hours (weekends especially).</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>How do I book an appointment?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>You can book directly through our website using the "Quick Book Now" button, or give us a call. We also accept DMs on Instagram if that's easier for you. Appointments are held for 10 minutes, so try to be on time!</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What are your hours?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We're open Tuesday through Friday from 9am to 7pm, Saturday from 8am to 5pm, and Sunday from 10am to 3pm. We're closed on Mondays. Hours may vary on holidays so check our Instagram for updates.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>How much does a haircut cost?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Prices vary by service and barber. A standard cut starts at $30, with fades, beard work, and specialty services priced accordingly. Check our Services page for the full menu, or ask your barber at the time of your visit.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Do you cut kids' hair?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. We love cutting kids' hair and our barbers are great with younger clients. We recommend booking an appointment for kids to minimize wait time and keep things stress-free for everyone.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Can I request a specific barber?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, and we encourage it. When booking, simply select the barber you'd like. Each barber has their own schedule so availability may vary — but we'll always do our best to get you with your preferred person.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What forms of payment do you accept?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We accept cash, all major credit and debit cards, Apple Pay, and Cash App. Tips are always appreciated and can be given in any of these forms as well.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Do you do beard trims and shaves?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes — beard shaping, trims, and lineup are all part of what we do. You can book a beard service on its own or add it on to your haircut. Ask your barber what they'd recommend for your specific beard type and goals.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Where are you located and is there parking?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We're located in downtown Haddonfield, NJ. Street parking is available on Kings Highway and surrounding streets. The downtown area is also very walkable, so if you're nearby you can always stroll over.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What if I'm not happy with my cut?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Your satisfaction matters to us. If something isn't right, let us know before you leave and your barber will make it right on the spot. We stand behind our work — no awkward conversations needed, just let us fix it.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq-ask">
+      <div class="faq-ask-inner">
+        <h3 class="faq-ask-title">Still have a question?</h3>
+        <p class="faq-ask-sub">Can't find what you're looking for? Send it over and we'll get back to you.</p>
+        <div class="faq-ask-form">
+          <input type="text" id="faqQuestion" class="faq-ask-input" placeholder="Type your question here..." />
+          <button class="faq-ask-btn" onclick="sendFaqQuestion()">Send Question</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════ -->
+  <section class="services-section" id="services">
+
+    <div class="services-header">
+      <div class="section-kicker">What We Offer</div>
+      <h2 class="services-title">Our <em>services.</em></h2>
+      <p class="services-intro">Every service is performed with care, precision, and the same attention to detail that Tommy's Original was built on.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div class="service-name">Regular Haircut</div>
+        <p class="service-desc">A clean, precise cut tailored to your style. Whether you're coming in for a fade, a taper, or a classic shape-up — we've got you covered from start to finish.</p>
+        <a href="https://booksy.com/en-us/632422_tommys-original_barber-shop_28453_haddonfield?do=invite&_branch_match_id=1549996852613772323&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVDw5PifJy93FN80%2ByrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA2c9T%2BzwAAAA%3D#ba_s=seo" target="_blank" class="service-book-btn">Book Now →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div class="service-name">Haircut & Beard</div>
+        <p class="service-desc">The full package. A fresh haircut paired with a beard trim and shape. Walk in looking good, walk out looking great — head to chin.</p>
+        <a href="https://booksy.com/en-us/632422_tommys-original_barber-shop_28453_haddonfield?do=invite&_branch_match_id=1549996852613772323&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVDw5PifJy93FN80%2ByrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA2c9T%2BzwAAAA%3D#ba_s=seo" target="_blank" class="service-book-btn">Book Now →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div class="service-name">Shear Haircut & Beard</div>
+        <p class="service-desc">For those who prefer scissor work over clippers. A detailed shear cut gives texture and movement to your hair, finished with a sculpted beard trim.</p>
+        <a href="https://booksy.com/en-us/632422_tommys-original_barber-shop_28453_haddonfield?do=invite&_branch_match_id=1549996852613772323&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVDw5PifJy93FN80%2ByrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA2c9T%2BzwAAAA%3D#ba_s=seo" target="_blank" class="service-book-btn">Book Now →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <div class="service-name">Hot Towel Shave</div>
+        <p class="service-desc">The classic barbershop experience. A steamed hot towel, pre-shave oil, straight razor, and a cool towel finish. Your skin will thank you.</p>
+        <a href="https://booksy.com/en-us/632422_tommys-original_barber-shop_28453_haddonfield?do=invite&_branch_match_id=1549996852613772323&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVDw5PifJy93FN80%2ByrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA2c9T%2BzwAAAA%3D#ba_s=seo" target="_blank" class="service-book-btn">Book Now →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <div class="service-name">Beard Trim</div>
+        <p class="service-desc">Shape, line, and clean up your beard to keep it looking sharp between cuts. We work with your natural growth pattern to define the look you want.</p>
+        <a href="https://booksy.com/en-us/632422_tommys-original_barber-shop_28453_haddonfield?do=invite&_branch_match_id=1549996852613772323&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVDw5PifJy93FN80%2ByrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUA2c9T%2BzwAAAA%3D#ba_s=seo" target="_blank" class="service-book-btn">Book Now →</a>
+      </div>
+
+    </div>
+
+    <div class="services-note">
+      <p>Ask your barber at time of visit for pricing. All services include a lineup and finish.</p>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+
+    <div class="contact-header">
+      <div class="contact-header-top">
+        <div>
+          <div class="section-kicker">Get In Touch</div>
+          <h2 class="contact-title">Come <em>find us.</em></h2>
+          <p class="contact-intro">Whether you want to book, have a question, or just want to say what's up — we're easy to reach.</p>
+        </div>
+        <div class="contact-social-logos">
+          <a href="https://www.facebook.com/p/Tommys-Original-61585288442780/" target="_blank">
+            <img src="images/Facebook_f_logo_(2021).svg.webp" alt="Facebook" class="social-logo" />
+          </a>
+          <a href="https://www.instagram.com/tommysoriginal/" target="_blank">
+            <img src="images/Instagram_logo_2022.svg.webp" alt="Instagram" class="social-logo" />
+          </a>
+          <a href="https://www.tiktok.com/@tommys_original" target="_blank">
+            <img src="images/tiktok-logo.png" alt="TikTok" class="social-logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <a href="https://maps.apple.com/?address=320+N+Haddon+Ave,+Haddonfield,+NJ+08033" target="_blank" class="contact-info-item">
+        <span>320 N Haddon Ave, Haddonfield, NJ 08033</span>
+      </a>
+      <a href="tel:+18565241528" class="contact-info-item">
+        <span>(856) 524-1528</span>
+      </a>
+      <a href="mailto:tommysoriginal3@gmail.com" class="contact-info-item">
+        <span>tommysoriginal3@gmail.com</span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-logo">Tommy's <span>Original</span></div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/tommysoriginal/" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@tommys_original" target="_blank">TikTok</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="footer-copy">© 2024 Tommy's Original</div>
+  </footer>
+
+  <!-- JS loaded at end of body so the DOM is ready when the script runs -->
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('.community-tag[data-photo]').forEach(tag => {
+      tag.addEventListener('click', function () {
+        document.querySelectorAll('.community-tag').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        const img = document.getElementById('community-photo-img');
+        img.style.opacity = '0';
+        setTimeout(() => {
+          img.src = this.dataset.photo;
+          img.style.objectPosition = this.dataset.photoPosition || 'center';
+          img.style.opacity = '1';
+        }, 200);
+      });
+    });
+  </script>
+  <script>
+    (function () {
+      const overlay = document.getElementById('intro-overlay');
+      // Hold for 1.4s after logo appears, then rip away
+      setTimeout(function () {
+        overlay.classList.add('exit');
+        setTimeout(function () {
+          overlay.style.display = 'none';
+        }, 500);
+      }, 1400);
+    })();
+  </script>
+
+</body>
+</html>
+

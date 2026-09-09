@@ -1,0 +1,513 @@
+/* ─── SHARED OVERRIDES ───────────────────────────────────────────── */
+nav a.nav-active {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ─── PAGE HERO ──────────────────────────────────────────────────── */
+.shop-hero {
+  background: var(--ink);
+  min-height: 38vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 60px 60px 48px;
+  position: relative;
+  border-bottom: 2px solid var(--gold);
+  overflow: hidden;
+}
+
+.shop-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 48px,
+      rgba(170,255,0,0.025) 48px,
+      rgba(170,255,0,0.025) 49px
+    );
+  pointer-events: none;
+}
+
+.shop-hero-content { position: relative; z-index: 1; }
+
+.shop-hero-title {
+  font-size: clamp(42px, 6vw, 80px);
+  color: var(--white);
+  letter-spacing: -0.02em;
+  margin-top: 10px;
+  line-height: 1;
+}
+
+.shop-hero-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.shop-hero-sub {
+  font-size: 14px;
+  color: rgba(176,184,193,0.55);
+  margin-top: 16px;
+  max-width: 400px;
+  line-height: 1.7;
+}
+
+.shop-hero-badge {
+  position: absolute;
+  bottom: 48px;
+  right: 60px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gold);
+  color: var(--ink);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  z-index: 1;
+}
+
+/* ─── PHOTO SECTION ──────────────────────────────────────────────── */
+.photo-section {
+  padding: 80px 60px;
+  background: var(--white);
+  border-bottom: 2px solid var(--ink);
+}
+
+.photo-section-header {
+  margin-bottom: 40px;
+}
+
+.photo-section-title {
+  font-size: clamp(32px, 4vw, 54px);
+  letter-spacing: -0.02em;
+  margin-top: 6px;
+}
+
+.photo-section-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+/* Auto grid: first card spans 2 rows, rest fill in */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 2px;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--light);
+}
+
+.photo-card--large {
+  grid-row: span 2;
+}
+
+.photo-placeholder {
+  flex: 1;
+  min-height: 220px;
+  background: #e4e6e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s;
+}
+
+.photo-card--large .photo-placeholder {
+  min-height: 100%;
+}
+
+.photo-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 12px,
+    rgba(0,0,0,0.025) 12px,
+    rgba(0,0,0,0.025) 13px
+  );
+}
+
+.photo-card:hover .photo-placeholder { background: #d8dadc; }
+
+.photo-placeholder-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.photo-placeholder-icon {
+  font-size: 40px;
+  opacity: 0.35;
+}
+
+.photo-placeholder-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mid);
+  max-width: 160px;
+  line-height: 1.6;
+}
+
+.photo-caption {
+  padding: 12px 16px;
+  background: var(--white);
+  border-top: 1px solid var(--light);
+  font-size: 12px;
+  color: var(--mid);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.photo-caption-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 8.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--ink);
+  padding: 2px 7px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+/* ─── COMMUNITY SECTION ──────────────────────────────────────────── */
+.community-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 0;
+  border-bottom: 2px solid var(--ink);
+  background: var(--ink);
+}
+
+.community-text {
+  padding: 80px 60px;
+  border-right: 2px solid rgba(255,255,255,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+}
+
+.community-title {
+  font-size: clamp(38px, 4.5vw, 62px);
+  color: var(--white);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.community-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.community-body {
+  font-size: 15px;
+  line-height: 1.85;
+  color: rgba(176,184,193,0.65);
+  max-width: 440px;
+}
+
+.community-body p + p { margin-top: 14px; }
+
+.community-stats {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid rgba(255,255,255,0.1);
+  margin-top: 8px;
+}
+
+.stat-item {
+  flex: 1;
+  padding: 22px 20px;
+  text-align: center;
+}
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8.5px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(176,184,193,0.4);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 60px;
+  background: rgba(255,255,255,0.08);
+  flex-shrink: 0;
+}
+
+/* Map / visual side */
+.community-visual {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.community-map-placeholder {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.community-map-inner {
+  aspect-ratio: 1;
+  background: #111;
+  border: 2px solid rgba(170,255,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.community-map-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 28px,
+    rgba(170,255,0,0.04) 28px,
+    rgba(170,255,0,0.04) 29px
+  ),
+  repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 28px,
+    rgba(170,255,0,0.04) 28px,
+    rgba(170,255,0,0.04) 29px
+  );
+}
+
+.map-pin {
+  font-size: 44px;
+  position: relative;
+  z-index: 1;
+}
+
+.map-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.02em;
+}
+
+.map-sublabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  position: relative;
+  z-index: 1;
+}
+
+.community-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.community-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(176,184,193,0.55);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 6px 12px;
+  transition: color 0.2s, border-color 0.2s;
+  cursor: default;
+}
+
+.community-tag:hover {
+  color: var(--gold);
+  border-color: rgba(170,255,0,0.4);
+}
+
+/* ─── CHARITY SECTION ────────────────────────────────────────────── */
+.charity-section {
+  background: var(--white);
+  border-bottom: 2px solid var(--ink);
+  padding: 80px 60px;
+}
+
+.charity-header {
+  max-width: 640px;
+  margin-bottom: 52px;
+}
+
+.charity-title {
+  font-size: clamp(34px, 4vw, 56px);
+  letter-spacing: -0.02em;
+  margin-top: 6px;
+  line-height: 1.05;
+}
+
+.charity-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.charity-intro {
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.8;
+  margin-top: 18px;
+  max-width: 560px;
+}
+
+.charity-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  margin-bottom: 48px;
+}
+
+.charity-card {
+  border: 1px solid var(--light);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: border-color 0.25s, background 0.25s;
+}
+
+.charity-card:hover {
+  border-color: var(--ink);
+  background: #f7f7f5;
+}
+
+.charity-icon {
+  font-size: 32px;
+}
+
+.charity-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.charity-desc {
+  font-size: 13px;
+  color: var(--mid);
+  line-height: 1.75;
+}
+
+.charity-cta {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-top: 32px;
+  border-top: 1px solid var(--light);
+}
+
+.charity-cta p {
+  font-size: 14px;
+  color: var(--mid);
+}
+
+.charity-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink);
+  color: var(--cream);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 11px 24px;
+  border: 2px solid var(--ink);
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.charity-btn::before {
+  content: '✦';
+  font-size: 8px;
+  color: var(--gold);
+}
+
+.charity-btn:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .shop-hero { padding: 48px 28px 40px; }
+  .shop-hero-badge { right: 28px; bottom: 40px; }
+
+  .photo-section { padding: 60px 28px; }
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .photo-card--large { grid-row: span 1; }
+
+  .community-section { grid-template-columns: 1fr; }
+  .community-text { border-right: none; border-bottom: 2px solid rgba(255,255,255,0.08); padding: 60px 28px; }
+  .community-visual { padding: 48px 28px; }
+
+  .charity-section { padding: 60px 28px; }
+  .charity-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .shop-hero-badge { display: none; }
+  .photo-grid { grid-template-columns: 1fr; }
+  .photo-card--large { grid-row: span 1; }
+  .charity-grid { grid-template-columns: 1fr; }
+  .community-stats { flex-direction: column; }
+  .stat-divider { width: 100%; height: 1px; }
+  .charity-cta { flex-direction: column; align-items: flex-start; }
+}
