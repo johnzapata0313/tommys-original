@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tommy's Original — Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/store.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="store-header">
+    <div class="logo-cell">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Tommy's Original Barbershop" class="logo-img" />
+      </a>
+    </div>
+    <div class="nav-cell">
+      <nav>
+        <button class="filter-btn active" onclick="filterProducts('all', this)">All</button>
+        <button class="filter-btn" onclick="filterProducts('apparel', this)">Apparel</button>
+        <button class="filter-btn" onclick="filterProducts('accessories', this)">Accessories</button>
+        <button class="filter-btn" onclick="filterProducts('grooming', this)">Grooming</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- STORE GRID -->
+  <section class="store-section">
+
+    <div class="product-grid" id="productGrid">
+
+      <!-- Apparel -->
+      <div class="product-card" data-category="apparel">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder">
+            <span>T</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Apparel</div>
+          <div class="product-name">Classic Logo Tee</div>
+          <div class="product-price">$35.00</div>
+          <button class="product-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="apparel">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder">
+            <span>T</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Apparel</div>
+          <div class="product-name">Tommy's Hoodie</div>
+          <div class="product-price">$65.00</div>
+          <button class="product-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="apparel">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder">
+            <span>T</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Apparel</div>
+          <div class="product-name">Snapback Cap</div>
+          <div class="product-price">$40.00</div>
+          <button class="product-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="apparel">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder">
+            <span>T</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Apparel</div>
+          <div class="product-name">Crewneck Sweatshirt</div>
+          <div class="product-price">$55.00</div>
+          <button class="product-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Accessories -->
+      <div class="product-card" data-category="accessories">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder">
+            <span>T</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Accessories</div>
+          <div class="product-name">Logo Sticker Pack</div>
+          <div class="product-price">$8.00</div>
+          <button class="product-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="accessories">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder">
+            <span>T</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Accessories</div>
+          <div class="product-name">Barber Cape</div>
+          <div class="product-price">$45.00</div>
+          <button class="product-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Grooming -->
+      <div class="product-card" data-category="grooming">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder">
+            <span>T</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Grooming</div>
+          <div class="product-name">Pomade</div>
+          <div class="product-price">$22.00</div>
+          <button class="product-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="grooming">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder">
+            <span>T</span>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Grooming</div>
+          <div class="product-name">Beard Oil</div>
+          <div class="product-price">$18.00</div>
+          <button class="product-btn">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Tommy's <span>Original</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-copy">© 2024 Tommy's Original</div>
+  </footer>
+
+  <script>
+    function filterProducts(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.product-card').forEach(card => {
+        card.style.display = (category === 'all' || card.dataset.category === category) ? '' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>

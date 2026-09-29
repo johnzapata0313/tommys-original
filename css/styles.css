@@ -54,7 +54,7 @@ body::before {
 
 /* ─── TYPOGRAPHY ─────────────────────────────────────────────── */
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 900;
   line-height: 1.05;
 }
@@ -89,7 +89,7 @@ header {
 }
 
 .logo-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -144,10 +144,10 @@ nav a:hover { color: var(--ink); }
   gap: 8px;
   background: var(--ink);
   color: var(--cream) !important;
-  font-family: 'DM Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  font-family: 'Moby Dick', cursive;
+  font-size: 28px;
+  letter-spacing: 0.04em;
+  text-transform: none;
   padding: 9px 22px;
   border: 2px solid var(--ink);
   cursor: pointer;
@@ -205,7 +205,7 @@ nav a:hover { color: var(--ink); }
 }
 
 .hero-placeholder-text {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-style: italic;
   font-size: clamp(42px, 6vw, 80px);
   font-weight: 400;
@@ -237,7 +237,7 @@ nav a:hover { color: var(--ink); }
   position: fixed;
   bottom: 0;
   right: 0;
-  width: min(340px, 96vw);
+  width: min(420px, 96vw);
   z-index: 1000;
   box-shadow: -4px -8px 48px rgba(0,0,0,0.45);
   font-family: 'DM Sans', sans-serif;
@@ -247,27 +247,27 @@ nav a:hover { color: var(--ink); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #111;
-  padding: 12px 18px;
+  background: var(--gold);
+  padding: 18px 24px;
   cursor: pointer;
-  border-top: 2px solid var(--gold);
-  border-left: 2px solid var(--gold);
+  border-top: 3px solid var(--ink);
+  border-left: 3px solid var(--ink);
   user-select: none;
   transition: background 0.2s;
 }
 
-.spotify-bar:hover { background: #181818; }
+.spotify-bar:hover { background: var(--rust); }
 
 .spotify-label {
   font-family: 'Mob', sans-serif;
-  font-size: 13px;
-  color: var(--white);
+  font-size: 17px;
+  color: var(--ink);
   letter-spacing: 0.04em;
 }
 
 .spotify-chevron {
   font-size: 11px;
-  color: var(--gold);
+  color: var(--ink);
   transition: transform 0.35s ease;
 }
 
@@ -385,7 +385,7 @@ section { padding: 80px 60px; }
 }
 
 .about-rule span {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-style: italic;
   font-size: 20px;
   color: var(--gold);
@@ -430,7 +430,7 @@ section { padding: 80px 60px; }
 }
 
 .about-ornament-inner {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-style: italic;
   font-size: 28px;
   font-weight: 700;
@@ -476,7 +476,7 @@ section { padding: 80px 60px; }
   text-transform: uppercase;
 }
 .est-badge span:last-child {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 900;
   font-size: 14px;
   color: var(--white);
@@ -574,7 +574,7 @@ section { padding: 80px 60px; }
 }
 
 .barber-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--white);
@@ -628,7 +628,7 @@ footer {
 }
 
 .footer-logo {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
   font-weight: 900;
   color: var(--white);
@@ -820,8 +820,7 @@ nav a.nav-active {
 /* Auto grid: first card spans 2 rows, rest fill in */
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2px;
 }
 
@@ -833,8 +832,7 @@ nav a.nav-active {
 }
 
 .photo-card--large {
-  grid-row: span 2;
-  height: 600px;
+  height: auto;
 }
 
 .photo-img {
@@ -985,7 +983,7 @@ nav a.nav-active {
 }
 
 .stat-num {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 26px;
   font-weight: 900;
   color: var(--gold);
@@ -1074,7 +1072,7 @@ nav a.nav-active {
 }
 
 .map-label {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--white);
@@ -1184,7 +1182,7 @@ nav a.nav-active {
 }
 
 .charity-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -1341,7 +1339,7 @@ nav a.nav-active {
 }
 
 .hero-stat-num {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 36px;
   font-weight: 900;
   color: var(--gold);
@@ -1379,7 +1377,7 @@ nav a.nav-active {
 }
 
 .mission-quote {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 96px;
   font-weight: 900;
   color: rgba(0,0,0,0.12);
@@ -1388,7 +1386,7 @@ nav a.nav-active {
 }
 
 .mission-text {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(22px, 3vw, 34px);
   font-weight: 400;
   font-style: italic;
@@ -1466,7 +1464,7 @@ nav a.nav-active {
 }
 
 .initiative-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -1587,7 +1585,7 @@ nav a.nav-active {
 }
 
 .partner-ornament-inner {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-style: italic;
   font-size: 26px;
   font-weight: 700;
@@ -1635,7 +1633,7 @@ nav a.nav-active {
 }
 
 .partner-badge span:last-child {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 900;
   font-size: 13px;
   color: var(--ink);
@@ -1729,7 +1727,7 @@ nav a.nav-active {
   padding: 26px 0;
   cursor: pointer;
   text-align: left;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(16px, 2vw, 20px);
   font-weight: 700;
   color: var(--ink);
@@ -1852,7 +1850,7 @@ nav a.nav-active {
 }
 
 .service-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: var(--white);
@@ -1868,7 +1866,7 @@ nav a.nav-active {
 }
 
 .service-price {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 28px;
   font-weight: 900;
   color: var(--gold);
@@ -2054,7 +2052,7 @@ nav a.nav-active {
 }
 
 .contact-card-value {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--white);
@@ -2136,9 +2134,9 @@ nav a:hover {
   background: var(--ink) !important;
   color: var(--gold) !important;
   border-color: var(--ink) !important;
-  font-family: 'Kaushan Script', cursive !important;
+  font-family: 'Moby Dick', cursive !important;
   font-size: 18px !important;
-  letter-spacing: 0.02em !important;
+  letter-spacing: 0.04em !important;
 }
 
 nav a:hover { color: var(--white); }
@@ -2269,7 +2267,7 @@ nav a:hover { color: var(--white); }
 }
 
 .faq-ask-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(24px, 3vw, 36px);
   color: var(--white);
   letter-spacing: -0.01em;
@@ -2414,4 +2412,80 @@ nav a:hover { color: var(--white); }
 
 @media (max-width: 500px) {
   .charity-simple-photos { grid-template-columns: 1fr; }
+}
+
+/* ─── SOCIAL / REELS ─────────────────────────────────────────── */
+.social-section {
+  background: var(--ink);
+  padding: 80px 48px;
+}
+
+.social-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.social-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px;
+  color: var(--cream);
+  line-height: 1;
+}
+
+.social-title em {
+  font-family: 'Moby Dick', cursive;
+  font-style: normal;
+  color: var(--gold);
+}
+
+.reels-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto 56px;
+}
+
+.reels-grid .instagram-media {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cream);
+  text-decoration: none;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.social-link:hover { color: var(--gold); }
+
+.social-link-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .reels-grid { grid-template-columns: repeat(2, 1fr); }
+  .social-section { padding: 60px 24px; }
+}
+
+@media (max-width: 500px) {
+  .reels-grid { grid-template-columns: 1fr; }
 }

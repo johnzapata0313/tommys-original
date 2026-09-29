@@ -73,7 +73,7 @@ nav a.nav-active {
 }
 
 .hero-stat-num {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 36px;
   font-weight: 900;
   color: var(--gold);
@@ -111,7 +111,7 @@ nav a.nav-active {
 }
 
 .mission-quote {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 96px;
   font-weight: 900;
   color: rgba(0,0,0,0.12);
@@ -120,7 +120,7 @@ nav a.nav-active {
 }
 
 .mission-text {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(22px, 3vw, 34px);
   font-weight: 400;
   font-style: italic;
@@ -195,7 +195,7 @@ nav a.nav-active {
 }
 
 .initiative-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -316,7 +316,7 @@ nav a.nav-active {
 }
 
 .partner-ornament-inner {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-style: italic;
   font-size: 26px;
   font-weight: 700;
@@ -364,7 +364,7 @@ nav a.nav-active {
 }
 
 .partner-badge span:last-child {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 900;
   font-size: 13px;
   color: var(--ink);
